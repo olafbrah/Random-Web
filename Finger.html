@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+	position:fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	width:100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.endorser {
+	width: 500px;
+	height: 300px;
+	}
+</style>
+</head>
+<body onmouseover="setCoords(event)" >
+<ul>
+  <li><a  href="#survey">Survey</a></li>
+  <li><a href="#mission">Mission</a></li>
+  <li><a href="#endorsers">Endorsers</a></li>
+  <li><a href="#about">About Pewdiepie</a></li>
+</ul>
+
+</br></br>
+
+<center><p style= "font-size:100px; color:red; font-family:courier; background-image: https://i.redd.it/3t88melm5eb01.jpg" >SUBSCRIBE TO PEWDIEPIE</p>
+</br>
+</center>
+
+</br></br></br>
+
+
+<h1 id="mission" style="font-family: comic-sans; font-size:80px">Our Mission</h1>
+<p style="font-size:35px">Our mission is to keep Pewdiepie the number one most substriced youtube channel.
+Right now T-series is competing for the top spot and they must be stopped! They are a
+large coporation that threatens the good youtube enviroment with their filthy Indian music 
+videos. Do you want your trending clogged with bollywood?"
+</br>
+
+
+<h1 id="about" style="font-family: comic-sans; font-size:80px">About Pewdiepie</h1>
+<p style="font-size:35px">He is the best youtuber ever. He is best known for his handshakes and 
+original content. He currently has over 70 million subsribers. On 15 August 2013, PewDiePie became the most-subscribed user on YouTube, being surpassed in late 2013 by YouTube Spotlight. Holding the position since 23 December 2013, the channel has over 73 million subscribers as of December 2018. From 29 December 2014 to 14 February 2017, PewDiePie's channel held the distinction of being the most-viewed YouTube channel, and as of November 2018, the channel has received over 19 billion video views.
+</p>
+
+<h1 id="endorsers" style="font-family: comic-sans; font-size:80px">Endorsers</h1>
+<h1>Mr. Beast</h1>
+<img class = "endorser" src="https://e3.365dm.com/18/10/1096x616/skynews-mrbeast-youtube_4460655.jpg?20181022090322">
+<p style="font-size:35px">Mr.Beast has launched a advertising campaign on radio and on public 
+facilities to promote pewdiepie. He is a truly a hero to this cause.</p>
+
+<h1>Ben Shapiro</h1>
+<img class = "endorser" src="https://cdn.cnsnews.com/ben_shapiro_speaking_on_the_ben_shapiro_show_the_ben_shapiro_show_screenshot_4.jpg">
+<p style="font-size:35px">Ben Shapiro has appeared on meme review and given a demonstration of the "ok this is epic" meme right here on the channel. He is a power player in the fight against t series.</p>
+
+
+<h1 id="survey" style="font-family: comic-sans; font-size:80px">Survey</h1>
+<h1>Have you subsribed to pewdiepie?</p>
+<form>
+<fieldset>
+    <legend>you better answer right</legend>
+	<input type="radio" name="sub" value="yes" checked> Yes<br>
+    <input type="radio" name="sub" value="no"> No<br>
+	</br>
+	<input style="width: 100px; height: 50px; font-size: 20px" type="submit" name="enter" value="submit">
+	</fieldset>
+</form>
+
+<img id="finger" src="red.png" style="width:50px; height:50px">
+  
+<img src="brofist.jpg" style="width:100px; height:100px">
+<a><img id="tseries" src="tseries.jpg" style="width:200px; height:200px; float:right"></a>
+
+</br>
+<center>
+
+
+
+</body>
+<script>
+
+function setCoords(event){
+var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var y = event.clientX;
+if(y<=width-400){
+var set  = y+"px";
+document.getElementById('finger').style.width = set;
+}
+}
+followMouse();
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body id = "body" bgcolor= "powderblue" >
+<center>
+<p id="demo"></p>
+<center>
+<p style="font-size: 40px; font-family:impact">Move on the colors!</p>
+</center>
+<img src="rainbow.png" width = "500" height = "500" usemap="#pallete"  	onclick="showCoords(event)"></center>
+<map name="pallete">
+	<area shape ="rect" coords="0,0,70,500" alt="rainbow" onmouseover = "turnRed(event)">
+	<area shape ="rect" coords="70,0,140,500" alt="rainbow" onmouseover = "turnOrange(event)">
+	<area shape ="rect" coords="140,0,210,500" alt="rainbow" onmouseover = "turnYellow(event)">
+	<area shape ="rect" coords="210,0,280,500" alt="rainbow" onmouseover = "turnGreen(event)">
+	<area shape ="rect" coords="280,0,350,500" alt="rainbow" onmouseover = "turnPowerBlue(event)">
+	<area shape ="rect" coords="350,0,420,500" alt="rainbow" onmouseover = "turnBlue(event)">
+	<area shape ="rect" coords="420,0,490,500" alt="rainbow" onmouseover 	 = "turnPurple(event)">
+	
+</map>
+
+
+
+<script>
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = coords;
+}
+function turnRed(event){
+	document.getElementById("body").style.backgroundColor="red";
+	}
+function turnOrange(event){
+	document.getElementById("body").style.backgroundColor="orange";
+	}	
+function turnYellow(event){
+	document.getElementById("body").style.backgroundColor="yellow";
+	}
+function turnGreen(event){
+	document.getElementById("body").style.backgroundColor="green";
+	}
+function turnPowerBlue(event){
+	document.getElementById("body").style.backgroundColor="powderblue";
+	}
+function turnBlue(event){
+	document.getElementById("body").style.backgroundColor="blue";
+	}
+function turnPurple(event){
+	document.getElementById("body").style.backgroundColor="purple";
+	}
+</script>
+</body>
+</html>

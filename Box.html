@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center><p style= "font-size:30px; color:green; font-family:courier;" >WELCOME TO THE BOX</p>
+</br>
+<img id="evil" src="" style="width:50px; height:50px">
+</br>
+<button onclick="closeBox()">Close box</button>
+<img id="myImage" src="closedbox.jpg" style="width:100px">
+<button onclick= "openBox()">Open box</button>
+</center>
+</body>
+<script>
+function openBox(){
+document.getElementById('myImage').src='openbox.jpg';
+document.getElementById('evil').src='teemo.jpg';
+}
+function closeBox(){
+document.getElementById('myImage').src='closedbox.jpg';
+document.getElementById('evil').src='';
+}
+</script>
+</html>
